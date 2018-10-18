@@ -1,4 +1,4 @@
-# jsschool
+# JS School at Jobsity
 This is the general repo created for the JS School....inside here you can find all challenges projects uploaded
 
 Here you can check the weekly challenges organized in folders.
