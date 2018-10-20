@@ -6,3 +6,9 @@ RESTful APIs and HTTP requests
     -> Get information related to the list of characters of Cable & Deadpool (2004) #46 (Zombie Variant)
     -> Get a list of all stories when Agent X (Nijo) appears
     -> Generate JSON document with this information and push to GitHub repo
+
+
+The file "charactersCableDeadpool.json" contains a resource of every character that appears in 
+characters of Cable & Deadpool (2004) #46 (Zombie Variant) comic.
+
+The file "storiesNijo.json" contains a resource of every stories when Agent X (Nijo) appears.
