@@ -12,3 +12,7 @@ The file "charactersCableDeadpool.json" contains a resource of every character t
 characters of Cable & Deadpool (2004) #46 (Zombie Variant) comic.
 
 The file "storiesNijo.json" contains a resource of every stories when Agent X (Nijo) appears.
+
+If you want to know how to make this requests, please follow this youtube link where I posted a detailed explanation.
+
+__https://youtu.be/5Fub_k8zh2E__
