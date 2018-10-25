@@ -1,0 +1,83 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'PlutoSansBlack';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Tangerine"), url("../../res/fonts_pluto_sans/OpenTypeOTF/HVD Fonts - PlutoSansBlack.otf") format("truetype");
+}
+
+.text {
+  font-family: "PlutoSansBlack";
+}
+
+#section-a {
+  padding: 2em 1em 1em;
+}
+
+#section-a ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#section-a ul li {
+  border: 0.5em;
+  border-color: #fff;
+  border-style: solid;
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 50%;
+          flex: 0 50%;
+}
+
+#section-a ul li img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#section-a ul li .card-content {
+  border: 0.1em;
+  border-style: solid;
+  padding: 0.5em;
+  font-size: 0.5em;
+}
+
+#section-a ul li .card-content .checked {
+  color: orange;
+}
+
+#header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  background: #3333ff;
+}
+
+#section-b {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden;
+}
+
+#section-b.show {
+  visibility: visible;
+}
+/*# sourceMappingURL=main.css.map */
