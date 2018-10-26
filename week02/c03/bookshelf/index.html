@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <title>Bookshelf</title>
+</head>
+<body>
+    <!--The main wrapper of the page-->
+    <div id="wrapper">
+
+        <!--Header wrapper with logo nav bar and person elements-->
+        <div id="headerwrapper">
+            <!--The logo is one image-->
+            <div id="logo">
+                <img src="./src/img/logo1.png" alt="">
+            </div>
+
+            <!--The nav bar contains the title of the page and the search bar-->
+            <div id="navbar">
+                <h2 id="title">Bookshelf</h2>
+                <input type="text" id="searchInput" value="" placeholder=" Search...">
+            </div>
+
+            <!--The person contains the name of the person and the photo-->
+            <div id="person">
+                <h5>Jacob Treml &nbsp &nbsp &nbspv</h5>
+                <img src="./src/img/portrait_small.jpg" alt="">
+            </div>
+        </div>
+
+        <!--The bodywrapper contains all the page content-->
+        <div id="bodywrapper">
+            <!--The left element contains the left navigation bar-->
+            <div id="left">
+                <div id="first" class="itemNav">
+                    <h4>MAIN</h4>
+                    <ul class="list">
+                        <li class="nav-item"><i class="ic fas fa-globe"></i>
+                            <p class="pa">Quito</p>
+                        </li>
+                        <li class="nav-item"><i class="ic fas fa-globe"></i>
+                            <p class="pa">Cartagena</p>
+                        </li>
+                        <li class="nav-item"><i class="ic fas fa-globe"></i>
+                            <p class="pa">Medellin</p>
+                        </li>
+                        <li class="nav-item"><i class="ic fas fa-mobile-alt"></i>
+                            <p class="pa">Digital</p>
+                        </li>
+                        <li class="nav-item"><i class="ic fas fa-user-tag"></i>
+                            <p class="pa">Personal Loans</p>
+                        </li>
+                        <li class="nav-item"><i class="ic fas fa-tag"></i>
+                            <p class="pa">New Releases</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="second" class="itemNav">
+                    <h4>YOUR BOOKS</h4>
+                    <ul class="list">
+                        <li class="nav-item"><i class="ic fas fa-book-open"></i>
+                            <p class="pa">Readings</p>
+                        </li>
+                        <li class="nav-item"><i class="ic fas fa-history"></i>
+                            <p class="pa">History</p>
+                        </li>
+                        <li class="nav-item"><i class="ic fas fa-bookmark"></i>
+                            <p class="pa">Read Later</p>
+                        </li>
+                        <li class="nav-item"><i class="ic fas fa-heart"></i>
+                            <p class="pa">Favorites</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--The center element contains the books display-->
+            <div id="center">
+                <div id="menu">
+                    <h3>New Releases</h3>
+                    <p><b>Release Date</b>&#160&#160&#160|&#160&#160&#160Popularity</p>
+                    <div id="icons">
+                        <div id="icns">
+                            <img src="./src/img/ic1.png" alt="">
+                            <img src="./src/img/ic2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <!--The ul element contains the list of books-->
+                <ul id="ul">
+                    <li>
+                        <div id="cont">
+                            <div class="card">
+                                <img src="./src/img/Book1.png"
+                                    alt="">
+                                <div class="card-content">
+                                    <h3 class="card-title text">Everything I never Told Y...</h3>
+                                    <p class="text">Celeste Ng</p>
+                                    <span class="fas fa-star checked"></span>
+                                    <span class="fas fa-star checked"></span>
+                                    <span class="fas fa-star checked"></span>
+                                    <span class="fas fa-star checked"></span>
+                                    <span class="fas fa-star"></span>
+                                </div>
+                            </div>
+                            <div class="overlay">
+                                <i id="heart" class="ic fab fa-gratipay"></i>
+                                <i id="bookmark" class="ic fas fa-bookmark"></i>
+                                <i id="book" class="ic fas fa-book-open"></i>
+                                <div id="fs">
+                                    <h5>RATE THIS BOOK</h5>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div id="cont">
+                            <div class="card">
+                                <img src="./src/img/Book2.png"
+                                    alt="">
+                                <div class="card-content">
+                                    <h3 class="card-title text">All Tht Light We Cannot...</h3>
+                                    <p class="text">Anthony Doerr</p>
+                                    <span class="fas fa-star checked"></span>
+                                    <span class="fas fa-star checked"></span>
+                                    <span class="fas fa-star checked"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                </div>
+                            </div>
+                            <div class="overlay">
+                                <i id="heart" class="ic fab fa-gratipay"></i>
+                                <i id="bookmark" class="ic fas fa-bookmark"></i>
+                                <i id="book" class="ic fas fa-book-open"></i>
+                                <div id="fs">
+                                    <h5>RATE THIS BOOK</h5>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div id="cont">
+                            <div class="card">
+                                <img src="./src/img/Book3.png"
+                                    alt="">
+                                <div class="card-content">
+                                    <h3 class="card-title text">Everything I never Told Y...</h3>
+                                    <p class="text">Celeste Ng</p>
+                                    <span class="fas fa-star checked"></span>
+                                    <span class="fas fa-star checked"></span>
+                                    <span class="fas fa-star checked"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                </div>
+                            </div>
+                            <div class="overlay">
+                                <i id="heart" class="ic fab fa-gratipay"></i>
+                                <i id="bookmark" class="ic fas fa-bookmark"></i>
+                                <i id="book" class="ic fas fa-book-open"></i>
+                                <div id="fs">
+                                    <h5>RATE THIS BOOK</h5>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div id="cont">
+                            <div class="card">
+                                <img src="./src/img/Book4.png"
+                                    alt="">
+                                <div class="card-content">
+                                    <h3 class="card-title text">Everything I never Told Y...</h3>
+                                    <p class="text">Celeste Ng</p>
+                                    <span class="fas fa-star checked"></span>
+                                    <span class="fas fa-star checked"></span>
+                                    <span class="fas fa-star checked"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                </div>
+                            </div>
+                            <div class="overlay">
+                                <i id="heart" class="ic fab fa-gratipay"></i>
+                                <i id="bookmark" class="ic fas fa-bookmark"></i>
+                                <i id="book" class="ic fas fa-book-open"></i>
+                                <div id="fs">
+                                    <h5>RATE THIS BOOK</h5>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div id="cont">
+                            <div class="card">
+                                <img src="./src/img/Book5.png"
+                                    alt="">
+                                <div class="card-content">
+                                    <h3 class="card-title text">Everything I never Told Y...</h3>
+                                    <p class="text">Celeste Ng</p>
+                                    <span class="fas fa-star checked"></span>
+                                    <span class="fas fa-star checked"></span>
+                                    <span class="fas fa-star checked"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                </div>
+                            </div>
+                            <div class="overlay">
+                                <i id="heart" class="ic fab fa-gratipay"></i>
+                                <i id="bookmark" class="ic fas fa-bookmark"></i>
+                                <i id="book" class="ic fas fa-book-open"></i>
+                                <div id="fs">
+                                    <h5>RATE THIS BOOK</h5>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!--The right element contains the right navigation bar-->
+            <div id="right">
+                <h4>MOST READ BOOKS</h4>
+                <ol>
+                    <li>
+                        <p>1. Hooked: How to Build Habit-...</p>
+                    </li>
+                    <li>
+                        <p>2. The Inevitable: Understandin...</p>
+                    </li>
+                    <li>
+                        <p>3. Lean In: Women, Work and t...</p>
+                    </li>
+                    <li>
+                        <p>4. Building a Business When Th...</p>
+                    </li>
+                    <li>
+                        <p>5. How Google Works.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="modal" class="modal mdl">
+        <!-- Modal content -->
+        <div class="modal-content mdl">
+            <div id="modalheader">
+                <div class="mdl" id="mainheader">
+                    <h5 class="mdl">ALL THE LIGHT WE CANNOT SEE</h5>
+                    <p class="mdl"><b>Novel by</b> Anthony Doerr</p>
+                    <p class="mdl"><b>544 pages</b></p>
+                </div>
+
+                <div class="mdl" id="secondheader">
+                    <p class="mdl" id="year">2014</p>
+                </div>
+            </div>
+
+            <div class="mdl" id="modalbody"> 
+                <h5 class="mdl">SUMMARY</h5>
+                <p class="mdl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia eos rem aliquid magni nam neque laborum tenetur
+                    dolorem esse natus, non velit eum earum ipsam nesciunt voluptate dolores! Dicta, facere? Nemo fugiat ea
+                    suscipit recusandae quam cupiditate, vero accusantium blanditiis magnam perferendis sit, hic modi, aut eveniet
+                    nam ipsam doloribus aliquid ullam sint illo ipsa obcaecati cum? Quaerat, minima unde.</p>
+            </div>
+
+            <div class="mdl" id="modalrating">
+                <h5 class="mdl">RATING</h5>
+                <span class="fas fa-star checked mdl"></span>
+                <span class="fas fa-star checked mdl"></span>
+                <span class="fas fa-star checked mdl"></span>
+                <span class="fas fa-star mdl"></span>
+                <span class="fas fa-star mdl"></span>
+            </div>
+
+            <div class="mdl" id="modalfooter">
+                <h5 class="mdl">RECOMMENDED BY</h5>
+                <div class="mdl" id="imgs">
+                    <img class="mdl" src="./src/img/portrait_small.jpg" alt="">
+                    <img class="mdl" src="./src/img/portrait_small.jpg" alt="">
+                    <img class="mdl" src="./src/img/portrait_small.jpg" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="./src/js/main.js"></script>
+</body>
+</html>
