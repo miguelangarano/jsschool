@@ -1,13 +1,105 @@
+@import 'fonts';
+@import 'mobile';
+
 //General settings
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;    
-}
+    box-sizing: border-box;
+    #modal{
+        display: none; 
+        position: absolute; 
+        z-index: 3; 
+        left: 0;
+        top: 0;
+        width: 25%; 
+        height: 50%; 
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+        border-radius: 2%;
+        opacity: 1;
+        
 
-//input font
-input {
-    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+        /* Modal Content/Box */
+        .modal-content {
+            margin: 4% auto; /* 15% from the top and centered */
+            width: 95%; /* Could be more or less, depending on screen size */
+        
+            opacity: 1;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 20% 50% 10% 20%;
+            grid-gap: 0.2em;
+            grid-template-areas: 
+            "h"
+            "b"
+            "r"
+            "f";
+            
+            h5{
+                font-family: PlutoSansCondBold;
+            }
+
+            p{
+                color: #ffffff;
+                font-family: PlutoSansCondLight;
+                font-size: 0.8em;
+            }
+
+            .fas{
+                color: orange;
+            }
+
+            #modalheader{
+                grid-area: h;
+                display: flex;
+                #mainheader{
+                    flex:2;
+                }
+                #secondheader{
+                    flex:1;
+                    justify-self: flex-end;
+                    #year{
+                        font-family: PlutoSansCondThin;
+                        
+                    }
+                }
+                h5{
+                    color: #58ACFA;
+                    font-family: PlutoSansCondBold;
+                }
+            }
+
+            h5{
+                color: #DFDFDF;
+            }
+
+            #modalbody{
+                grid-area: b;
+                
+            }
+
+            #modalrating{
+                grid-area: r;
+            }
+
+            #modalfooter{
+                grid-area: f;
+                margin-top: 0.5em;
+                img{
+                    border-width: 2px;
+                    border-radius: 50%;
+                    border-style: solid;
+                    height: 2em;
+                    justify-self: end;
+                    border-color: #58ACFA;
+                    margin-left: 1em;
+                }
+            }
+
+
+        }
+    }    
 }
 
 //General wrapper display
@@ -37,9 +129,6 @@ input {
         align-items: center;
         background: #fff;
         margin-left: 1em;
-        h4{
-            margin-left: 0.5em;
-        }
 
         img{
             height: 2rem;
@@ -62,6 +151,11 @@ input {
             border: 1px solid #58ACFA;
             padding: 0.5em;
         }
+
+        h2{
+            font-family: PlutoSansRegular;
+            font-size: 1.1em;
+        }
     }
 
     //Person display
@@ -73,7 +167,7 @@ input {
         padding-left: 3em;
         
         img{
-            border-width: 1px;
+            border-width: 2px;
             border-radius: 50%;
             border-style: solid;
             height: 2em;
@@ -85,6 +179,7 @@ input {
         h5{
             float: right;
             justify-self: end;
+            font-family: PlutoSansCondLight
         }
     }
 }
@@ -99,27 +194,41 @@ input {
     grid-template-areas: 
     "l c c c c r";
 
+    //Left panel display
     #left{
         grid-area: l;
         background: #151515;
         h4{
             color: white;
+            font-family: PlutoSansCondBold;
+            font-size: 0.8em;
         }
 
         li{
             //background: #FFFF00;
-            margin-top: 1.5em;
+            margin-top: 1em;
             display: flex;
             padding-top: 0.5em;
             p{
                 //background: #FAAC58;
                 flex: 4;
-                color: #6683DA;
+                color: #62B0CE;
+                font-family: PlutoSansCondLight;
+                font-size: 0.8em;
             }
             i{
                 flex: 1;
                 align-self: center;
-                color: #6683DA;
+                color: #62B0CE;
+            }
+        }
+
+        li:hover{
+            p{
+                color: #fff;
+            }
+            i{
+                color: #fff;
             }
         }
 
@@ -138,18 +247,31 @@ input {
         }
     }
 
+    //Center panel display
     #center{
         grid-area: c;
         display: block;
         padding: 2em 4em 0 4em;
+        height: 40rem;
         border-top: 1px solid #58ACFA;
+        background: #F4F9FA;
 
         #menu{
             display: flex;
             justify-content: space-between;
             margin-bottom: 2em;
+            h3{
+                font-family: PlutoSansCondThin;
+                font-size: 1em;
+            }
+
+            p{
+                font-family: PlutoSansCondLight;
+                font-size: 0.7em;
+            }
         }
 
+        //How the books are displayed
         #ul{
             list-style: none;
             display: grid;
@@ -159,11 +281,21 @@ input {
 
             li{
                 border: 0.5em;
-                border-color: #FAFFFF;
+                border-color: #F4F9FA;
                 border-style: solid;
                 margin-bottom: 1em;
                 background: #fff;
                 color: #333;
+
+                h3{
+                    font-family: PlutoSansCondBold;
+                    font-size: 1.3em;
+                }
+
+                p{
+                    font-family: PlutoSansThin;
+                    font-size: 1.3em;
+                }
             }
 
             li:hover{
@@ -171,12 +303,18 @@ input {
                     display: grid;
                     grid-template-columns: 1fr;
                     grid-template-rows: 1fr;
+                    background: #444444;
+                    
                     grid-template-areas: 
                     "a";
 
+                    img{
+                        transform: scale(1.05, 1.05);
+                        opacity: 0.3;
+                    }
+
                     .card{
                         grid-area: a;
-                        opacity: 0.3;
                     }
                     .overlay{
                         grid-area: a;
@@ -186,36 +324,51 @@ input {
                         grid-template: 3/3;
                         grid-template-areas: 
                         "h . bk"
-                        "b b b"
+                        ". b ."
                         "s s s";
                         margin-top: 1rem;
 
                         #heart{
                             grid-area: h;
+                            color: #fff;
+                            border-radius: 50%;
                         }
 
                         #bookmark{
                             grid-area: bk;
+                            color: #fff;
                         }
 
                         #book{
                             grid-area: b;
+                            color: #58ACFA;
+                            transform: scale(1.5,1.5);                        
                         }
 
                         #fs{
                             grid-area: s;
+                            h5{
+                                color: #ffffff;
+                            }
+                            i{
+                                color: orange;
+                            }
                         }
                     }
                 }
             }
 
+            //Displaying the content of each li element
             #cont{
 
                 .overlay{
                     display: none;
                     transition: .5s ease;
                     text-align: center;
-                    z-index: -1;            
+                    z-index: -1;
+                    h5{
+                        font-family: PlutoSansCondBold;
+                    }            
                 }
 
                 img{
@@ -226,8 +379,7 @@ input {
                 }
 
                 .card-content{
-                    border: 0.1em;
-                    border-style: solid;
+                    background: #F4F9FA;
                     padding: 0.5em;
                     font-size: 0.5em;
                     transition: 1s;
@@ -240,6 +392,7 @@ input {
         }
     }
 
+    //Right panel display
     #right{
         grid-area: r;
         background: #151515;
@@ -248,19 +401,20 @@ input {
         h4{
             margin-top: 2em;
             padding-left: 2em;
+            font-family: PlutoSansCondBold;
+            font-size: 0.8em;
         }
 
         ol{
-            padding-left: 3em;
+            padding-left: 2em;
+            list-style: none;
             li{
                 margin-top: 1.5em;
+                p{
+                    font-family: PlutoSansCondLight;
+                    font-size: 0.7em;
+                }
             }
         }
-    }
-}
-
-@media(max-width:700px){
-    body{
-        display: none;
     }
 }
